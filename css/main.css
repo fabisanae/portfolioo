@@ -371,19 +371,33 @@ footer .copyright {
   color: var(--shade-300);
 }
 /* Para telas pequenas (celulares) */
-@media screen and (max-width: 768px) {
-  .header-image {
-    position: absolute; /* Define a posição absoluta para que a imagem possa ser posicionada sobre o texto */
-    top: 2em; /* Alinha a imagem ao topo da área pai */
-    left: 5%; /* Alinha a imagem ao centro horizontalmente */
-    transform: translateX(-50%); /* Move a imagem para a esquerda em 50% do seu próprio tamanho */
-  }
 
-  .logo-container {
-    text-align: center; /* Centraliza o texto horizontalmente */
-    margin-top: 20px; /* Adiciona margem ao topo da logo para separá-la da imagem */
+  @media screen and (max-width: 768px) {
+    .header-image {
+      /* Posiciona a imagem abaixo do título */
+      position: relative;
+      top: auto;
+      left: auto;
+      transform: none;
+      /* Ajusta a margem superior para mover a imagem para cima */
+      margin-top: 0.5em; /* Você pode ajustar este valor conforme necessário */
+      /* Centraliza horizontalmente */
+      margin-left: auto;
+      margin-right: auto;
+      display: block; /* Garante que a imagem seja exibida como um bloco */
+      max-width: 100%; /* Garante que a imagem não ultrapasse a largura da tela */
+      height: auto; /* Mantém a proporção da imagem */
+    }
+  
+    .logo-container {
+      text-align: center; /* Centraliza o texto horizontalmente */
+      margin-top: 20px; /* Adiciona margem ao topo da logo para separá-la da imagem */
+    }
   }
-}
+  
+  /* Demais estilos CSS permanecem inalterados */
+  
+
 
 @media screen and (min-width: 721px) {
   .hamburger,
