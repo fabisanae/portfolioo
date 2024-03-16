@@ -374,8 +374,8 @@ footer .copyright {
 @media screen and (max-width: 768px) {
   .header-image {
     position: absolute; /* Define a posição absoluta para que a imagem possa ser posicionada sobre o texto */
-    top: 5em; /* Alinha a imagem ao topo da área pai */
-    left: 20%; /* Alinha a imagem ao centro horizontalmente */
+    top: 2em; /* Alinha a imagem ao topo da área pai */
+    left: 5%; /* Alinha a imagem ao centro horizontalmente */
     transform: translateX(-50%); /* Move a imagem para a esquerda em 50% do seu próprio tamanho */
   }
 
@@ -393,6 +393,7 @@ footer .copyright {
 }
 
 @media screen and (max-width: 720px) {
+  
   .logo {
     font-size: 1rem;
   }
